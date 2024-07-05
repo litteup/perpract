@@ -1,0 +1,54 @@
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+}
+
+.menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+
+.menu li {
+    flex: 1;
+}
+
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu li a:hover {
+    background-color: #111;
+}
+
+.menu-icon {
+    display: none;
+    color: white;
+    font-size: 26px;
+    padding: 14px 16px;
+    cursor: pointer;
+}
+
+/* Responsive styling */
+@media screen and (max-width: 600px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+    }
+    .menu-icon {
+        display: block;
+    }
+}
